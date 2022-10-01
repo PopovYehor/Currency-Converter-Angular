@@ -1,0 +1,4 @@
+<mat-form-field appearance="fill" class="input-container">
+    <mat-label>{{label}}</mat-label>
+    <input matInput  #inputes [value]='values'  placeholder="Enter the amount of money" (input)="getValue(inputes.value)">
+</mat-form-field>

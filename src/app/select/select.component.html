@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill" class="select-container">
+    <mat-label>Select currency</mat-label>
+    <mat-select #Select (change)="getValue(Select.value)" [(value)]="defaulSelectItem" (selectionChange)="getValue(Select.value)">
+        <mat-option *ngFor = "let select of Rate.CurrencyLabels" value="{{select.name}}"><div class= "currency-flag currency-flag-{{(select.name).toLowerCase()}}" ></div> {{select.name}}</mat-option>
+    </mat-select>
+</mat-form-field>

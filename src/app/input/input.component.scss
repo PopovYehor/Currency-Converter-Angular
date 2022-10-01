@@ -1,0 +1,12 @@
+.input-container{
+    width: 100%;
+}
+.mat-form-field{
+    font-size: 17px;
+}
+.mat-form-field-appearance-fill::ng-deep{
+    .mat-form-field-flex{
+        background-color: #d9e4dd7c
+    }
+}  
+    
