@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { CurrencyRateService } from '../services/rate/currency-rate.service';
+import { CurrencyRateService } from '../../../services/rate/currency-rate.service';
 @Component({
   selector: 'app-select',
   templateUrl: './select.component.html',

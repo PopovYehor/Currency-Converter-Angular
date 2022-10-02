@@ -1,0 +1,7 @@
+<header class="header">
+    <div class="actual-courses">
+        <span class="actual-courses-title">Currency Rate to UAH today</span>
+        <app-rate-item class="actual-courses-currency-wrap" (setRate)="rateTo('EUR')" [rateSymbol]="'euro_symbol'" [rateData]="Rate.rateNow.first"></app-rate-item>
+        <app-rate-item class="actual-courses-currency-wrap" (setRate)="rateTo('USD')" [rateSymbol]="'attach_money'" [rateData]="Rate.rateNow.second"></app-rate-item>
+    </div>
+</header>

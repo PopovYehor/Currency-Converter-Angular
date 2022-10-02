@@ -1,31 +1,33 @@
-export interface Selected  {
+
+export interface iSelected  {
     [x: string]: any;
     first: string;
     second: string;
 }
-export interface Count {
+export interface iCount {
     [x: string]: any;
     first: number;
     second: number
 }
 
-export interface ConfigRates {
+export interface iConfigRates {
     [x: string]: any;
     base: string,
-    date: string,
-    moth: object,
-    rates: any,
-    success: boolean
+    rates: any
 }
-export interface LabelRates {
+export interface iLabelRates {
     name: string
 }
-export interface ISwap{
+export interface iSwap{
     [x: string]: any;
     swap: void
 }
-export interface IRequestRate{
+export interface iRequestRate{
     [x: string]: any;
     USD: void,
     EUR: void
+}
+
+export interface iRequestPush{
+    rates: object
 }

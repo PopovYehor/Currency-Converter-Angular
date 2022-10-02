@@ -4,24 +4,29 @@
     justify-content: center;
     position: relative;
     .mat-fab{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         position: relative;
         background-color: #FBF7F0;
         .material-icons{
-            font-size: 50px;
+            font-size: 40px;
             color: rgba(0, 0, 0, 0.685);
         }
         .mat-icon{
             position: absolute;
-            top: 16%;
-            left: 16%;
-            width: 50px;
-            height: 50px;
+            top: 18%;
+            left: 18%;
+            width: 40px;
+            height: 40px;
         }  
     }
     .mat-fab:not([class*=mat-elevation-z]){
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
      
+}
+@media screen and (max-width: 1024px) {
+    .mat-icon{
+        transform: rotate(90deg);
+    }
 }

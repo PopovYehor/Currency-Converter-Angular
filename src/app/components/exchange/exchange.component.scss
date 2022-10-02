@@ -43,11 +43,25 @@
     max-width: 130px;
     margin: 0 15px 0 15px;
 }
-
-@media screen and (max-width: 574px) {
+@media screen and (max-height: 680px) {
+    .exchange-container{
+        background-color: transparent !important;
+        box-shadow: none !important;
+        .exchange-item-wrap{
+            background-color: #D9E4DD !important;
+        }
+    }
+}
+@media screen and (max-Width: 1024px){
     .exchange-container{
         flex-direction: column;
+        gap: 0px !important;
+    }
+}
+@media screen and (max-width: 574px) {
+    .exchange-container{
         height: 80% !important;  
+        
     }
     .input-wrap{
         max-width: 130px;
@@ -57,6 +71,7 @@
         .exchange-item-wrap{
             flex-direction: column;
             height: 30% !important;
+            padding-top: 30px !important;
         }
     }
 }
